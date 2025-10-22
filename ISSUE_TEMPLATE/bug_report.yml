@@ -1,0 +1,36 @@
+name: 🐞 Bug
+description: 回報一個功能錯誤或未預期行為
+title: "[BUG] <輸入標題>"
+labels: ["bug", "needs triage"]
+assignees: []
+body:
+  - type: checkboxes
+    attributes:
+      label: 是否已有相似議題？
+      description: 請先搜尋現有的 issues。
+      options:
+        - label: 我已搜尋過所有現有的 issues
+          required: true
+  - type: textarea
+    attributes:
+      label: 問題描述
+      description: 請清楚描述目前發生的錯誤
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 重現步驟
+      placeholder: |
+        1. 啟動應用程式
+        2. 點擊某功能
+        3. 錯誤出現
+  - type: textarea
+    attributes:
+      label: 預期行為
+  - type: textarea
+    attributes:
+      label: 環境資訊
+      description: |
+        - OS: macOS 14 / Ubuntu 22.04
+        - Node: 20.x
+        - npm: 10.x
