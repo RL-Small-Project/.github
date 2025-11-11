@@ -1,35 +1,36 @@
 name: 🐞 Bug
-description: 回報一個功能錯誤或未預期行為
-title: "[BUG] <輸入標題>"
+description: Report a bug or unexpected behavior
+title: "[BUG] <Your title here>"
 labels: ["bug", "needs triage"]
 assignees: []
 body:
   - type: checkboxes
     attributes:
-      label: 是否已有相似議題？
-      description: 請先搜尋現有的 issues。
+      label: Is there an existing issue?
+      description: Please search the existing issues first.
       options:
-        - label: 我已搜尋過所有現有的 issues
+        - label: I have searched all existing issues
           required: true
   - type: textarea
     attributes:
-      label: 問題描述
-      description: 請清楚描述目前發生的錯誤
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: 重現步驟
+      label: Steps to Reproduce
       placeholder: |
-        1. 啟動應用程式
-        2. 點擊某功能
-        3. 錯誤出現
+        1. Go to '...'
+        2. Click on '....'
+        3. See error
   - type: textarea
     attributes:
-      label: 預期行為
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
   - type: textarea
     attributes:
-      label: 環境資訊
+      label: Environment Information
       description: |
         - OS: macOS 14 / Ubuntu 22.04
         - Node: 20.x
