@@ -1,22 +1,27 @@
 name: 🚀 Feature Request
-description: 提出新增功能或改進建議
+description: Suggest an idea for a new feature or improvement
 title: "[Feature]: "
 labels: ["feature", "enhancement"]
 body:
   - type: textarea
     attributes:
-      label: 功能描述
-      description: 描述你希望增加的功能與目的
-      placeholder: 請具體說明業務價值或用例
+      label: Feature Description
+      description: Describe the feature you'd like to add and its purpose.
+      placeholder: Please describe the business value or use case.
+    validations:
+      required: true
   - type: textarea
     attributes:
-      label: 實作想法 / 預期成果
+      label: Implementation Ideas / Expected Outcome
+      description: (Optional) Any ideas on how this could be implemented or what the final result should look like.
   - type: textarea
     attributes:
-      label: 相關文件或設計連結
+      label: Related Documents or Design Links
+      description: (Optional) Link to any relevant mockups, designs, or external documents.
   - type: checkboxes
     attributes:
-      label: 驗收標準
+      label: Acceptance Criteria
+      description: (Optional) Define what needs to be true for this feature to be considered complete.
       options:
-        - label: 已評估安全性風險
-        - label: 確保相容性與回歸測試
+        - label: Security risks have been evaluated
+        - label: Compatibility and regression testing ensured
